@@ -37,4 +37,4 @@ Route::get('/add-level', [levelController::class, 'create'])->name('user.v_creat
 Route::post('/level', [levelController::class, 'createlevel'])->name('user.createlevel');
 Route::get('/level/{level}/edit', [levelController::class, 'edit'])->name('user.edit');
 Route::post('/level/{level}/update', [levelController::class, 'update'])->name('user.update');
-Route::delete('/level/{delete}', [levelController::class, 'destroy'])->name('user.destroy');
+Route::delete('/level/{level}', [levelController::class, 'destroy'])->name('user.destroy');
