@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">    
 </head>
-    <body class="  ">
+    <body class="">
         <!-- loader Start -->
         <div id="loading">
         <div class="loader simple-loader">

@@ -53,30 +53,504 @@
                     </a>
                 </li>   
                 <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="dashboard/analytics-dashboard.html">
-                        <i class="icon" data-bs-toggle="tooltip" title="Analytics" data-bs-placement="right">
-                            <svg class="icon-20" width="20" height="20" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path opacity="0.4" d="M10.1167 0.333496H3.88856C1.61893 0.333496 0.333008 1.61942 0.333008 3.88905V10.1113C0.333008 12.3809 1.61893 13.6668 3.88856 13.6668H10.1167C12.3863 13.6668 13.6663 12.3809 13.6663 10.1113V3.88905C13.6663 1.61942 12.3863 0.333496 10.1167 0.333496Z" fill="currentColor"/>
-                                <path d="M3.91244 5.24609C3.61022 5.24609 3.36133 5.49498 3.36133 5.80313V10.3839C3.36133 10.6861 3.61022 10.935 3.91244 10.935C4.22059 10.935 4.46948 10.6861 4.46948 10.3839V5.80313C4.46948 5.49498 4.22059 5.24609 3.91244 5.24609Z" fill="currentColor"/>
-                                <path d="M7.02279 3.05957C6.72057 3.05957 6.47168 3.30846 6.47168 3.61661V10.384C6.47168 10.6862 6.72057 10.9351 7.02279 10.9351C7.33094 10.9351 7.57983 10.6862 7.57983 10.384V3.61661C7.57983 3.30846 7.33094 3.05957 7.02279 3.05957Z" fill="currentColor"/>
-                                <path d="M10.0932 7.66406C9.78502 7.66406 9.53613 7.91295 9.53613 8.2211V10.3841C9.53613 10.6863 9.78502 10.9352 10.0872 10.9352C10.3954 10.9352 10.6443 10.6863 10.6443 10.3841V8.2211C10.6443 7.91295 10.3954 7.66406 10.0932 7.66406Z" fill="currentColor"/>
+                    <a class="nav-link" data-bs-toggle="collapse" href="#master-data" role="button" aria-expanded="false" aria-controls="master-data">
+                        <i class="icon" data-bs-toggle="tooltip" title="Plugins" data-bs-placement="right">
+                            <svg width="20" class="icon-20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.4" d="M12.0865 22C11.9627 22 11.8388 21.9716 11.7271 21.9137L8.12599 20.0496C7.10415 19.5201 6.30481 18.9259 5.68063 18.2336C4.31449 16.7195 3.5544 14.776 3.54232 12.7599L3.50004 6.12426C3.495 5.35842 3.98931 4.67103 4.72826 4.41215L11.3405 2.10679C11.7331 1.96656 12.1711 1.9646 12.5707 2.09992L19.2081 4.32684C19.9511 4.57493 20.4535 5.25742 20.4575 6.02228L20.4998 12.6628C20.5129 14.676 19.779 16.6274 18.434 18.1581C17.8168 18.8602 17.0245 19.4632 16.0128 20.0025L12.4439 21.9088C12.3331 21.9686 12.2103 21.999 12.0865 22Z" fill="currentColor"></path>
+                                <path d="M11.3194 14.3209C11.1261 14.3219 10.9328 14.2523 10.7838 14.1091L8.86695 12.2656C8.57097 11.9793 8.56795 11.5145 8.86091 11.2262C9.15387 10.9369 9.63207 10.934 9.92906 11.2193L11.3083 12.5451L14.6758 9.22479C14.9698 8.93552 15.448 8.93258 15.744 9.21793C16.041 9.50426 16.044 9.97004 15.751 10.2574L11.8519 14.1022C11.7049 14.2474 11.5127 14.3199 11.3194 14.3209Z" fill="currentColor"></path>
                             </svg>
                         </i>
-                        <span class="item-name">Master Data</span>
+                        <span class="item-name">MASTER DATA</span>
+                        <i class="right-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" class="icon-18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </i>
                     </a>
+                    <ul class="sub-nav collapse" id="master-data" data-bs-parent="#sidebar-menu">
+                        <li class="nav-item">
+                            <a class="nav-link" href="dashboard/plugins/apexcharts.html">
+                                <i class="icon">
+                                    <svg class="icon-10" width="10" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                        <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
+                                        </g>
+                                    </svg>
+                                </i>
+                                <i class="sidenav-mini-icon" data-bs-toggle="tooltip" title="Apexcharts" data-bs-placement="right"> A </i>
+                                <span class="item-name">Setting Aplikasi</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dashboard/plugins/apexcharts.html">
+                                <i class="icon">
+                                    <svg class="icon-10" width="10" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                        <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
+                                        </g>
+                                    </svg>
+                                </i>
+                                <i class="sidenav-mini-icon" data-bs-toggle="tooltip" title="Apexcharts" data-bs-placement="right"> A </i>
+                                <span class="item-name">Unit/ Puskesmas</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dashboard/plugins/apexcharts.html">
+                                <i class="icon">
+                                    <svg class="icon-10" width="10" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                        <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
+                                        </g>
+                                    </svg>
+                                </i>
+                                <i class="sidenav-mini-icon" data-bs-toggle="tooltip" title="Apexcharts" data-bs-placement="right"> A </i>
+                                <span class="item-name">Data Program/<br>Kegiatan</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dashboard/plugins/apexcharts.html">
+                                <i class="icon">
+                                    <svg class="icon-10" width="10" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                        <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
+                                        </g>
+                                    </svg>
+                                </i>
+                                <i class="sidenav-mini-icon" data-bs-toggle="tooltip" title="Apexcharts" data-bs-placement="right"> A </i>
+                                <span class="item-name">Data DPA/Program <br>Kegiatan</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="collapse" href="#rekening-belanja" role="button" aria-expanded="false" aria-controls="rekening-belanja">
+                                <i class="icon" data-bs-toggle="tooltip" title="Rekening Belanja" data-bs-placement="right">
+                                    <!-- ... (icon SVG untuk Rekening Belanja) ... -->
+                                </i>
+                                <span class="item-name">Rekening Belanja</span>
+                                <i class="right-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" class="icon-18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </i>
+                            </a>
+                            <ul class="sub-nav collapse" id="rekening-belanja" data-bs-parent="#master-data">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="dashboard/plugins/apexcharts.html">
+                                        <i class="icon">
+                                            <svg class="icon-10" width="10" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <g>
+                                                <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
+                                                </g>
+                                            </svg>
+                                        </i>
+                                        <i class="sidenav-mini-icon" data-bs-toggle="tooltip" title="Apexcharts" data-bs-placement="right"> A </i>
+                                        <span class="item-name">Rekening Struktur</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="dashboard/plugins/apexcharts.html">
+                                        <i class="icon">
+                                            <svg class="icon-10" width="10" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <g>
+                                                <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
+                                                </g>
+                                            </svg>
+                                        </i>
+                                        <i class="sidenav-mini-icon" data-bs-toggle="tooltip" title="Apexcharts" data-bs-placement="right"> A </i>
+                                        <span class="item-name">Rekening Kelompok</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="dashboard/plugins/apexcharts.html">
+                                        <i class="icon">
+                                            <svg class="icon-10" width="10" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <g>
+                                                <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
+                                                </g>
+                                            </svg>
+                                        </i>
+                                        <i class="sidenav-mini-icon" data-bs-toggle="tooltip" title="Apexcharts" data-bs-placement="right"> A </i>
+                                        <span class="item-name">Rekening Jenis</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="dashboard/plugins/apexcharts.html">
+                                        <i class="icon">
+                                            <svg class="icon-10" width="10" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <g>
+                                                <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
+                                                </g>
+                                            </svg>
+                                        </i>
+                                        <i class="sidenav-mini-icon" data-bs-toggle="tooltip" title="Apexcharts" data-bs-placement="right"> A </i>
+                                        <span class="item-name">Rekening Objek</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="dashboard/plugins/apexcharts.html">
+                                        <i class="icon">
+                                            <svg class="icon-10" width="10" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <g>
+                                                <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
+                                                </g>
+                                            </svg>
+                                        </i>
+                                        <i class="sidenav-mini-icon" data-bs-toggle="tooltip" title="Apexcharts" data-bs-placement="right"> A </i>
+                                        <span class="item-name">Rekening Rincian <br>Objek</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="dashboard/plugins/apexcharts.html">
+                                        <i class="icon">
+                                            <svg class="icon-10" width="10" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <g>
+                                                <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
+                                                </g>
+                                            </svg>
+                                        </i>
+                                        <i class="sidenav-mini-icon" data-bs-toggle="tooltip" title="Apexcharts" data-bs-placement="right"> A </i>
+                                        <span class="item-name">Rekening Rekening 6</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="collapse" href="#obat-alkes" role="button" aria-expanded="false" aria-controls="obat-alkes">
+                                <i class="icon" data-bs-toggle="tooltip" title="Rekening Belanja" data-bs-placement="right">
+                                    <!-- ... (icon SVG untuk Rekening Belanja) ... -->
+                                </i>
+                                <span class="item-name">Obat dan Alkes</span>
+                                <i class="right-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" class="icon-18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </i>
+                            </a>
+                            <ul class="sub-nav collapse" id="obat-alkes" data-bs-parent="#master-data">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="dashboard/plugins/apexcharts.html">
+                                        <i class="icon">
+                                            <svg class="icon-10" width="10" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <g>
+                                                <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
+                                                </g>
+                                            </svg>
+                                        </i>
+                                        <i class="sidenav-mini-icon" data-bs-toggle="tooltip" title="Apexcharts" data-bs-placement="right"> A </i>
+                                        <span class="item-name">Data Obat</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="dashboard/plugins/apexcharts.html">
+                                        <i class="icon">
+                                            <svg class="icon-10" width="10" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <g>
+                                                <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
+                                                </g>
+                                            </svg>
+                                        </i>
+                                        <i class="sidenav-mini-icon" data-bs-toggle="tooltip" title="Apexcharts" data-bs-placement="right"> A </i>
+                                        <span class="item-name">Data Alkes</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </li>
+                
                 <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="dashboard/crypto-dashboard.html">
-                        <i class="icon" data-bs-toggle="tooltip" title="Crypto" data-bs-placement="right">   
-                        <svg class="icon-20" width="20" height="20" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path opacity="0.4" d="M16.8843 5.11485H13.9413C13.2081 5.11969 12.512 4.79355 12.0474 4.22751L11.0782 2.88762C10.6214 2.31661 9.9253 1.98894 9.19321 2.00028H7.11261C3.37819 2.00028 2.00001 4.19201 2.00001 7.91884V11.9474C1.99536 12.3904 21.9956 12.3898 21.9969 11.9474V10.7761C22.0147 7.04924 20.6721 5.11485 16.8843 5.11485Z" fill="currentColor"></path>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M20.8321 6.54353C21.1521 6.91761 21.3993 7.34793 21.5612 7.81243C21.8798 8.76711 22.0273 9.77037 21.9969 10.7761V16.0292C21.9956 16.4717 21.963 16.9135 21.8991 17.3513C21.7775 18.1241 21.5057 18.8656 21.0989 19.5342C20.9119 19.8571 20.6849 20.1553 20.4231 20.4215C19.2383 21.5089 17.665 22.0749 16.0574 21.9921H7.93061C6.32049 22.0743 4.74462 21.5086 3.55601 20.4215C3.2974 20.1547 3.07337 19.8566 2.88915 19.5342C2.48475 18.8661 2.21869 18.1238 2.1067 17.3513C2.03549 16.9142 1.99981 16.4721 2 16.0292V10.7761C1.99983 10.3374 2.02357 9.89902 2.07113 9.46288C2.08113 9.38636 2.09614 9.31109 2.11098 9.23659C2.13573 9.11241 2.16005 8.99038 2.16005 8.86836C2.25031 8.34204 2.41496 7.83116 2.64908 7.35101C3.34261 5.86916 4.76525 5.11492 7.09481 5.11492H16.8754C18.1802 5.01401 19.4753 5.4068 20.5032 6.21522C20.6215 6.3156 20.7316 6.4254 20.8321 6.54353ZM6.97033 15.5412H17.0355H17.0533C17.2741 15.5507 17.4896 15.4717 17.6517 15.3217C17.8137 15.1716 17.9088 14.963 17.9157 14.7425C17.9282 14.5487 17.8644 14.3577 17.7379 14.2101C17.5924 14.0118 17.3618 13.8935 17.1155 13.8907H6.97033C6.51365 13.8907 6.14343 14.2602 6.14343 14.7159C6.14343 15.1717 6.51365 15.5412 6.97033 15.5412Z" fill="currentColor"></path>
+                    <a class="nav-link" data-bs-toggle="collapse" href="#sidebar-plugins" role="button" aria-expanded="false" aria-controls="sidebar-user">
+                        <i class="icon" data-bs-toggle="tooltip" title="Plugins" data-bs-placement="right">
+                            <svg width="20" class="icon-20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.4" d="M12.0865 22C11.9627 22 11.8388 21.9716 11.7271 21.9137L8.12599 20.0496C7.10415 19.5201 6.30481 18.9259 5.68063 18.2336C4.31449 16.7195 3.5544 14.776 3.54232 12.7599L3.50004 6.12426C3.495 5.35842 3.98931 4.67103 4.72826 4.41215L11.3405 2.10679C11.7331 1.96656 12.1711 1.9646 12.5707 2.09992L19.2081 4.32684C19.9511 4.57493 20.4535 5.25742 20.4575 6.02228L20.4998 12.6628C20.5129 14.676 19.779 16.6274 18.434 18.1581C17.8168 18.8602 17.0245 19.4632 16.0128 20.0025L12.4439 21.9088C12.3331 21.9686 12.2103 21.999 12.0865 22Z" fill="currentColor"></path>
+                                <path d="M11.3194 14.3209C11.1261 14.3219 10.9328 14.2523 10.7838 14.1091L8.86695 12.2656C8.57097 11.9793 8.56795 11.5145 8.86091 11.2262C9.15387 10.9369 9.63207 10.934 9.92906 11.2193L11.3083 12.5451L14.6758 9.22479C14.9698 8.93552 15.448 8.93258 15.744 9.21793C16.041 9.50426 16.044 9.97004 15.751 10.2574L11.8519 14.1022C11.7049 14.2474 11.5127 14.3199 11.3194 14.3209Z" fill="currentColor"></path>
                             </svg>
-                        
                         </i>
-                        <span class="item-name">Anggaran</span>
+                        <span class="item-name">ANGGARAN</span>
+                        <i class="right-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" class="icon-18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </i>
                     </a>
-                </li> 
+                    <ul class="sub-nav collapse" id="sidebar-plugins" data-bs-parent="#sidebar-menu">
+                        <li class="nav-item">
+                            <a class="nav-link " href="dashboard/plugins/apexcharts.html">
+                                <i class="icon">
+                                    <svg class="icon-10" width="10" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                        <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
+                                        </g>
+                                    </svg>
+                                </i>
+                                <i class="sidenav-mini-icon" data-bs-toggle="tooltip" title="Apexcharts" data-bs-placement="right"> A </i>
+                                <span class="item-name">RKA Penyusun</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="dashboard/plugins/apexcharts.html">
+                                <i class="icon">
+                                    <svg class="icon-10" width="10" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                        <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
+                                        </g>
+                                    </svg>
+                                </i>
+                                <i class="sidenav-mini-icon" data-bs-toggle="tooltip" title="Apexcharts" data-bs-placement="right"> A </i>
+                                <span class="item-name">RKA Perubahan</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="dashboard/plugins/apexcharts.html">
+                                <i class="icon">
+                                    <svg class="icon-10" width="10" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                        <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
+                                        </g>
+                                    </svg>
+                                </i>
+                                <i class="sidenav-mini-icon" data-bs-toggle="tooltip" title="Apexcharts" data-bs-placement="right"> A </i>
+                                <span class="item-name">Anggaran Kas</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="collapse" href="#utilities-error" role="button" aria-expanded="false" aria-controls="utilities-error">
+                        <i class="icon" data-bs-toggle="tooltip" title="Utilities" data-bs-placement="right">
+                            <svg width="20" class="icon-20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.4" d="M11.9912 18.6215L5.49945 21.864C5.00921 22.1302 4.39768 21.9525 4.12348 21.4643C4.0434 21.3108 4.00106 21.1402 4 20.9668V13.7087C4 14.4283 4.40573 14.8725 5.47299 15.37L11.9912 18.6215Z" fill="currentColor"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.89526 2H15.0695C17.7773 2 19.9735 3.06605 20 5.79337V20.9668C19.9989 21.1374 19.9565 21.3051 19.8765 21.4554C19.7479 21.7007 19.5259 21.8827 19.2615 21.9598C18.997 22.0368 18.7128 22.0023 18.4741 21.8641L11.9912 18.6215L5.47299 15.3701C4.40573 14.8726 4 14.4284 4 13.7088V5.79337C4 3.06605 6.19625 2 8.89526 2ZM8.22492 9.62227H15.7486C16.1822 9.62227 16.5336 9.26828 16.5336 8.83162C16.5336 8.39495 16.1822 8.04096 15.7486 8.04096H8.22492C7.79137 8.04096 7.43991 8.39495 7.43991 8.83162C7.43991 9.26828 7.79137 9.62227 8.22492 9.62227Z" fill="currentColor"></path>
+                            </svg>
+                        </i>
+                        <span class="item-name">PENATAUSAHAAN</span>
+                        <i class="right-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" class="icon-18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </i>
+                    </a>
+                    <ul class="sub-nav collapse" id="utilities-error" data-bs-parent="#sidebar-menu">
+                        <li class="nav-item">
+                            <a class="nav-link " href="dashboard/errors/error404.html">
+                                <i class="icon" data-bs-toggle="tooltip" title="Awal" data-bs-placement="right">
+                                    <svg class="icon-10" width="10" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                        <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
+                                        </g>
+                                    </svg>
+                                </i>
+                                <span class="item-name">Saldo Awal</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="dashboard/errors/error404.html">
+                                <i class="icon" data-bs-toggle="tooltip" title="Error 404" data-bs-placement="right">
+                                    <svg class="icon-10" width="10" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                        <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
+                                        </g>
+                                    </svg>
+                                </i>
+                                <span class="item-name">Penerimaan</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="dashboard/errors/error404.html">
+                                <i class="icon" data-bs-toggle="tooltip" title="Error 404" data-bs-placement="right">
+                                    <svg class="icon-10" width="10" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                        <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
+                                        </g>
+                                    </svg>
+                                </i>
+                                <span class="item-name">Transaksi</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="dashboard/errors/error404.html">
+                                <i class="icon" data-bs-toggle="tooltip" title="Error 404" data-bs-placement="right">
+                                    <svg class="icon-10" width="10" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                        <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
+                                        </g>
+                                    </svg>
+                                </i>
+                                <span class="item-name">Dokumentasi</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="dashboard/errors/error404.html">
+                                <i class="icon" data-bs-toggle="tooltip" title="Error 404" data-bs-placement="right">
+                                    <svg class="icon-10" width="10" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                        <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
+                                        </g>
+                                    </svg>
+                                </i>
+                                <span class="item-name">Nomor Surat</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+               
+
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="collapse" href="#sidebar-form" role="button" aria-expanded="false" aria-controls="sidebar-form">
+                        <i class="icon" data-bs-toggle="tooltip" title="Form" data-bs-placement="right">
+                            <svg width="20" class="icon-20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.4" d="M16.191 2H7.81C4.77 2 3 3.78 3 6.83V17.16C3 20.26 4.77 22 7.81 22H16.191C19.28 22 21 20.26 21 17.16V6.83C21 3.78 19.28 2 16.191 2Z" fill="currentColor"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.07996 6.6499V6.6599C7.64896 6.6599 7.29996 7.0099 7.29996 7.4399C7.29996 7.8699 7.64896 8.2199 8.07996 8.2199H11.069C11.5 8.2199 11.85 7.8699 11.85 7.4289C11.85 6.9999 11.5 6.6499 11.069 6.6499H8.07996ZM15.92 12.7399H8.07996C7.64896 12.7399 7.29996 12.3899 7.29996 11.9599C7.29996 11.5299 7.64896 11.1789 8.07996 11.1789H15.92C16.35 11.1789 16.7 11.5299 16.7 11.9599C16.7 12.3899 16.35 12.7399 15.92 12.7399ZM15.92 17.3099H8.07996C7.77996 17.3499 7.48996 17.1999 7.32996 16.9499C7.16996 16.6899 7.16996 16.3599 7.32996 16.1099C7.48996 15.8499 7.77996 15.7099 8.07996 15.7399H15.92C16.319 15.7799 16.62 16.1199 16.62 16.5299C16.62 16.9289 16.319 17.2699 15.92 17.3099Z" fill="currentColor"></path>
+                            </svg>
+                        </i>
+                        <span class="item-name">LAPORAN</span>
+                        <i class="right-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" class="icon-18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </i>
+                    </a>
+                    <ul class="sub-nav collapse" id="sidebar-form" data-bs-parent="#sidebar-menu">
+                        <li class="nav-item">
+                            <a class="nav-link " href="dashboard/form/form-element.html">
+                               <i class="icon">
+                                    <svg class="icon-10" width="10" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                        <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
+                                        </g>
+                                    </svg>
+                                </i>
+                               <i class="sidenav-mini-icon" data-bs-toggle="tooltip" title="Elements" data-bs-placement="right"> RKA </i>
+                               <span class="item-name">RKA Puskesmas</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="dashboard/form/form-element.html">
+                               <i class="icon">
+                                    <svg class="icon-10" width="10" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                        <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
+                                        </g>
+                                    </svg>
+                                </i>
+                               <i class="sidenav-mini-icon" data-bs-toggle="tooltip" title="Elements" data-bs-placement="right"> RKA </i>
+                               <span class="item-name">RKA Dinas</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="dashboard/form/form-element.html">
+                               <i class="icon">
+                                    <svg class="icon-10" width="10" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                        <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
+                                        </g>
+                                    </svg>
+                                </i>
+                               <i class="sidenav-mini-icon" data-bs-toggle="tooltip" title="Elements" data-bs-placement="right"> BKU </i>
+                               <span class="item-name">BKU</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="dashboard/form/form-element.html">
+                               <i class="icon">
+                                    <svg class="icon-10" width="10" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                        <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
+                                        </g>
+                                    </svg>
+                                </i>
+                               <i class="sidenav-mini-icon" data-bs-toggle="tooltip" title="Elements" data-bs-placement="right"> Realisasi </i>
+                               <span class="item-name">Realisasi NON BLUD </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="dashboard/form/form-element.html">
+                               <i class="icon">
+                                    <svg class="icon-10" width="10" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                        <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
+                                        </g>
+                                    </svg>
+                                </i>
+                               <i class="sidenav-mini-icon" data-bs-toggle="tooltip" title="Elements" data-bs-placement="right"> BLUD </i>
+                               <span class="item-name">Realisasi BLUD</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="dashboard/form/form-element.html">
+                               <i class="icon">
+                                    <svg class="icon-10" width="10" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                        <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
+                                        </g>
+                                    </svg>
+                                </i>
+                               <i class="sidenav-mini-icon" data-bs-toggle="tooltip" title="Elements" data-bs-placement="right"> Dinas </i>
+                               <span class="item-name">Realisasi Dinas</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="dashboard/form/form-element.html">
+                               <i class="icon">
+                                    <svg class="icon-10" width="10" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                        <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
+                                        </g>
+                                    </svg>
+                                </i>
+                               <i class="sidenav-mini-icon" data-bs-toggle="tooltip" title="Elements" data-bs-placement="right"> Laporan </i>
+                               <span class="item-name">Laporan Keuangan</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="collapse" href="#sidebar-auth" role="button" aria-expanded="false" aria-controls="sidebar-auth">
+                        <i class="icon" data-bs-toggle="tooltip" title="Auth Skins" data-bs-placement="right">
+                            <svg width="20" class="icon-20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.4" d="M12.0865 22C11.9627 22 11.8388 21.9716 11.7271 21.9137L8.12599 20.0496C7.10415 19.5201 6.30481 18.9259 5.68063 18.2336C4.31449 16.7195 3.5544 14.776 3.54232 12.7599L3.50004 6.12426C3.495 5.35842 3.98931 4.67103 4.72826 4.41215L11.3405 2.10679C11.7331 1.96656 12.1711 1.9646 12.5707 2.09992L19.2081 4.32684C19.9511 4.57493 20.4535 5.25742 20.4575 6.02228L20.4998 12.6628C20.5129 14.676 19.779 16.6274 18.434 18.1581C17.8168 18.8602 17.0245 19.4632 16.0128 20.0025L12.4439 21.9088C12.3331 21.9686 12.2103 21.999 12.0865 22Z" fill="currentColor"></path>
+                                <path d="M11.3194 14.3209C11.1261 14.3219 10.9328 14.2523 10.7838 14.1091L8.86695 12.2656C8.57097 11.9793 8.56795 11.5145 8.86091 11.2262C9.15387 10.9369 9.63207 10.934 9.92906 11.2193L11.3083 12.5451L14.6758 9.22479C14.9698 8.93552 15.448 8.93258 15.744 9.21793C16.041 9.50426 16.044 9.97004 15.751 10.2574L11.8519 14.1022C11.7049 14.2474 11.5127 14.3199 11.3194 14.3209Z" fill="currentColor"></path>
+                            </svg>
+                        </i>
+                        <span class="item-name">ADMINISTRATOR</span>
+                        <i class="right-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" class="icon-18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </i>
+                    </a>
+                    <ul class="sub-nav collapse" id="sidebar-auth" data-bs-parent="#sidebar-menu">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('user.v_level_user') }}">
+                                <i class="icon">
+                                    <svg class="icon-10" width="10" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                        <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
+                                        </g>
+                                    </svg>
+                                </i>
+                                <i class="sidenav-mini-icon" data-bs-toggle="tooltip" title="Lock Screen" data-bs-placement="right">LS</i>
+                                <span class="item-name">Level User</span>
+                            </a>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link" href="">
+                                <i class="icon">
+                                    <svg class="icon-10" width="10" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                        <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
+                                        </g>
+                                    </svg>
+                                </i>
+                                <i class="sidenav-mini-icon" data-bs-toggle="tooltip" title="Lock Screen" data-bs-placement="right">LS</i>
+                                <span class="item-name">Data User</span>
+                            </a>
+                        </li>  
+                    </ul>
+                </li>
+
                 <li class="nav-item">
                     <a class="nav-link " aria-current="page" href="dashboard/crypto-dashboard.html">
                         <i class="icon" data-bs-toggle="tooltip" title="Crypto" data-bs-placement="right">
@@ -87,46 +561,7 @@
                                 <path d="M10.0932 7.66406C9.78502 7.66406 9.53613 7.91295 9.53613 8.2211V10.3841C9.53613 10.6863 9.78502 10.9352 10.0872 10.9352C10.3954 10.9352 10.6443 10.6863 10.6443 10.3841V8.2211C10.6443 7.91295 10.3954 7.66406 10.0932 7.66406Z" fill="currentColor"/>
                             </svg>
                         </i>
-                        <span class="item-name">Penatausahaan</span>
-                    </a>
-                </li> 
-                <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="dashboard/crypto-dashboard.html">
-                        <i class="icon" data-bs-toggle="tooltip" title="Crypto" data-bs-placement="right">
-                            <svg class="icon-20" width="20" height="20" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path opacity="0.4" d="M10.1167 0.333496H3.88856C1.61893 0.333496 0.333008 1.61942 0.333008 3.88905V10.1113C0.333008 12.3809 1.61893 13.6668 3.88856 13.6668H10.1167C12.3863 13.6668 13.6663 12.3809 13.6663 10.1113V3.88905C13.6663 1.61942 12.3863 0.333496 10.1167 0.333496Z" fill="currentColor"/>
-                                <path d="M3.91244 5.24609C3.61022 5.24609 3.36133 5.49498 3.36133 5.80313V10.3839C3.36133 10.6861 3.61022 10.935 3.91244 10.935C4.22059 10.935 4.46948 10.6861 4.46948 10.3839V5.80313C4.46948 5.49498 4.22059 5.24609 3.91244 5.24609Z" fill="currentColor"/>
-                                <path d="M7.02279 3.05957C6.72057 3.05957 6.47168 3.30846 6.47168 3.61661V10.384C6.47168 10.6862 6.72057 10.9351 7.02279 10.9351C7.33094 10.9351 7.57983 10.6862 7.57983 10.384V3.61661C7.57983 3.30846 7.33094 3.05957 7.02279 3.05957Z" fill="currentColor"/>
-                                <path d="M10.0932 7.66406C9.78502 7.66406 9.53613 7.91295 9.53613 8.2211V10.3841C9.53613 10.6863 9.78502 10.9352 10.0872 10.9352C10.3954 10.9352 10.6443 10.6863 10.6443 10.3841V8.2211C10.6443 7.91295 10.3954 7.66406 10.0932 7.66406Z" fill="currentColor"/>
-                            </svg>
-                        </i>
-                        <span class="item-name">Laporan</span>
-                    </a>
-                </li> 
-                <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="dashboard/crypto-dashboard.html">
-                        <i class="icon" data-bs-toggle="tooltip" title="Crypto" data-bs-placement="right">
-                            <svg class="icon-20" width="20" height="20" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path opacity="0.4" d="M10.1167 0.333496H3.88856C1.61893 0.333496 0.333008 1.61942 0.333008 3.88905V10.1113C0.333008 12.3809 1.61893 13.6668 3.88856 13.6668H10.1167C12.3863 13.6668 13.6663 12.3809 13.6663 10.1113V3.88905C13.6663 1.61942 12.3863 0.333496 10.1167 0.333496Z" fill="currentColor"/>
-                                <path d="M3.91244 5.24609C3.61022 5.24609 3.36133 5.49498 3.36133 5.80313V10.3839C3.36133 10.6861 3.61022 10.935 3.91244 10.935C4.22059 10.935 4.46948 10.6861 4.46948 10.3839V5.80313C4.46948 5.49498 4.22059 5.24609 3.91244 5.24609Z" fill="currentColor"/>
-                                <path d="M7.02279 3.05957C6.72057 3.05957 6.47168 3.30846 6.47168 3.61661V10.384C6.47168 10.6862 6.72057 10.9351 7.02279 10.9351C7.33094 10.9351 7.57983 10.6862 7.57983 10.384V3.61661C7.57983 3.30846 7.33094 3.05957 7.02279 3.05957Z" fill="currentColor"/>
-                                <path d="M10.0932 7.66406C9.78502 7.66406 9.53613 7.91295 9.53613 8.2211V10.3841C9.53613 10.6863 9.78502 10.9352 10.0872 10.9352C10.3954 10.9352 10.6443 10.6863 10.6443 10.3841V8.2211C10.6443 7.91295 10.3954 7.66406 10.0932 7.66406Z" fill="currentColor"/>
-                            </svg>
-                        </i>
-                        <span class="item-name">Administrator</span>
-                    </a>
-                </li> 
-                <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="dashboard/crypto-dashboard.html">
-                        <i class="icon" data-bs-toggle="tooltip" title="Crypto" data-bs-placement="right">
-                            <svg class="icon-20" width="20" height="20" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path opacity="0.4" d="M10.1167 0.333496H3.88856C1.61893 0.333496 0.333008 1.61942 0.333008 3.88905V10.1113C0.333008 12.3809 1.61893 13.6668 3.88856 13.6668H10.1167C12.3863 13.6668 13.6663 12.3809 13.6663 10.1113V3.88905C13.6663 1.61942 12.3863 0.333496 10.1167 0.333496Z" fill="currentColor"/>
-                                <path d="M3.91244 5.24609C3.61022 5.24609 3.36133 5.49498 3.36133 5.80313V10.3839C3.36133 10.6861 3.61022 10.935 3.91244 10.935C4.22059 10.935 4.46948 10.6861 4.46948 10.3839V5.80313C4.46948 5.49498 4.22059 5.24609 3.91244 5.24609Z" fill="currentColor"/>
-                                <path d="M7.02279 3.05957C6.72057 3.05957 6.47168 3.30846 6.47168 3.61661V10.384C6.47168 10.6862 6.72057 10.9351 7.02279 10.9351C7.33094 10.9351 7.57983 10.6862 7.57983 10.384V3.61661C7.57983 3.30846 7.33094 3.05957 7.02279 3.05957Z" fill="currentColor"/>
-                                <path d="M10.0932 7.66406C9.78502 7.66406 9.53613 7.91295 9.53613 8.2211V10.3841C9.53613 10.6863 9.78502 10.9352 10.0872 10.9352C10.3954 10.9352 10.6443 10.6863 10.6443 10.3841V8.2211C10.6443 7.91295 10.3954 7.66406 10.0932 7.66406Z" fill="currentColor"/>
-                            </svg>
-                        </i>
-                        <span class="item-name">Profil User</span>
+                        <span class="item-name">PROFIL USER</span>
                     </a>
                 </li> 
                 

@@ -5,7 +5,7 @@
         <title>SIGN-JKN</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="" >
-        @include('include.v_style')
+        @include('include.v_stylelogin')
         <script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js?v=6"></script>
         <!-- Add your custom HEAD content here -->
 
@@ -46,13 +46,19 @@
 
            {{--  LOGIN FORM --}}
            <div id="group_3">
-               <div id="user">User</div>
-               <div id="rectangle_2"></div>
+            <label for="name" style="color: black;">Email</label>
+            <input type="text" id="name" name="name" class="form-control @error('name') is-invalid @enderror" style="border-color: black; width: 100%;">
+            @error('name')
+                <small class="text-danger">{{ $message }}</small>
+            @enderror
            </div>
 
-           <div id="group_4"  >
-               <div id="password"> Password</div>
-               <div id="rectangle_2_ek1"></div>
+           <div id="group_4">
+                <label for="password" style="color: black;">Password</label>
+                <input type="password" id="name" name="password" class="form-control @error('password') is-invalid @enderror" style="border-color: black; width: 100%;">
+                @error('password')
+                    <small class="text-danger">{{ $message }}</small>
+                @enderror
            </div>
 
            <div id="group_5"  >
