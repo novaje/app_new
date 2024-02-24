@@ -1,7 +1,7 @@
 {{-- css --}}
 
 <!-- Favicon -->
-<link rel="shortcut icon" href="{{ asset('template/assets/images/favicon.ico') }}">
+<link rel="shortcut icon" href="{{ asset('template/assets/images/logo_dinkes.png') }}">
 <!-- Library / Plugin Css Build -->
 <link rel="stylesheet" href="{{asset('template/assets/css/core/libs.min.css')}}">
 <link rel="stylesheet" href="{{asset('template/assets/vendor/sheperd/dist/css/sheperd.css')}}">

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>APLIKASI JKN</title>
+    <title>APLIKASI-JKN</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -20,8 +20,13 @@
         <div id="loading">
         <div class="loader simple-loader">
             <div class="loader-body ">
-                <img src="{{ asset('template/assets/images/loader.webp') }}" alt="loader" class="image-loader img-fluid ">
-            </div>
+            {{-- load --}}
+            <div class="col-md-3 col-sm-4">
+                <div class="iq-loader-box">
+                   <div class="iq-loader-9"></div>
+                </div>
+             </div>
+             {{-- end load --}}
         </div>
         </div>
         <!-- loader END -->
@@ -34,26 +39,6 @@
             <!--Nav Start-->
                 <nav class="nav navbar navbar-expand-xl navbar-light iq-navbar">
                    <div class="container-fluid navbar-inner">
-                      <a href="dashboard/index.html" class="navbar-brand">
-                         
-                         <!--Logo start-->
-                         <div class="logo-main">
-                             <div class="logo-normal">
-                                 <svg class="text-primary icon-30" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M7.25333 2H22.0444L29.7244 15.2103L22.0444 28.1333H7.25333L0 15.2103L7.25333 2ZM11.2356 9.32316H18.0622L21.3334 15.2103L18.0622 20.9539H11.2356L8.10669 15.2103L11.2356 9.32316Z" fill="currentColor"/>
-                                     <path d="M23.751 30L13.2266 15.2103H21.4755L31.9999 30H23.751Z" fill="#3FF0B9"/>
-                                 </svg>
-                             </div>
-                             <div class="logo-mini">
-                                 <svg class="text-primary icon-30" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M7.25333 2H22.0444L29.7244 15.2103L22.0444 28.1333H7.25333L0 15.2103L7.25333 2ZM11.2356 9.32316H18.0622L21.3334 15.2103L18.0622 20.9539H11.2356L8.10669 15.2103L11.2356 9.32316Z" fill="currentColor"/>
-                                     <path d="M23.751 30L13.2266 15.2103H21.4755L31.9999 30H23.751Z" fill="#3FF0B9"/>
-                                 </svg>
-                             </div>
-                         </div>
-                         <!--logo End-->         
-                    <h4 class="logo-title d-block d-xl-none" data-setting="app_name">APLIKASI</h4>
-                      </a>
                       <div class="sidebar-toggle" data-toggle="sidebar" data-active="true">
                          <i class="icon d-flex">
                             <svg class="icon-20" width="20" viewBox="0 0 24 24">

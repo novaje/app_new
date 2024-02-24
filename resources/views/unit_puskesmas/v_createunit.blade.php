@@ -6,7 +6,6 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="flex-wrap d-flex justify-content-between align-items-center">
-                    <!-- Elemen h1 dihapus -->
                 </div>
             </div>
         </div>
@@ -25,17 +24,41 @@
         <div class="card d-flex flex-column h-100">
             <div class="card-header d-flex justify-content-between">
                 <div class="header-title">
-                    <h4 class="card-title">Form Tambah Level</h4>
+                    <h4 class="card-title">Form Tambah Unit/ Puskesmas</h4>
                 </div>
             </div>
             <div class="card-body flex-grow-1">
-                <form method="post" action="{{ route('user.createlevel') }}">
+                <form method="post" action="{{ route('unit_puskesmas.createunit') }}">
                     @csrf
                     <div class="form-group">
-                        <label class="form-label" for="level">Level:</label>
-                        <input type="text" name="level" class="form-control @error('level') is invalid
-                        @enderror" value="{{ old('level') }}" id="level">
-                        @error('level')
+                        <label class="form-label" for="level">Nama Puskesmas:</label>
+                        <input type="text" name="nama_puskesmas" class="form-control @error('nama_puskesmas') is invalid
+                        @enderror" value="{{ old('nama_puskesmas') }}" id="level">
+                        @error('nama_puskesmas')
+                            <div class="alert alert-danger">{{ $message }}</div>
+                        @enderror
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="level">Status :</label>
+                        <input type="text" name="status" class="form-control @error('status') is invalid
+                        @enderror" value="{{ old('status') }}" id="status">
+                        @error('status')
+                            <div class="alert alert-danger">{{ $message }}</div>
+                        @enderror
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="level">Alamat :</label>
+                        <input type="text" name="alamat" class="form-control @error('alamat') is invalid
+                        @enderror" value="{{ old('alamat') }}" id="level">
+                        @error('alamat')
+                            <div class="alert alert-danger">{{ $message }}</div>
+                        @enderror
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="level">Pimpinan :</label>
+                        <input type="text" name="pimpinan" class="form-control @error('pimpinan') is invalid
+                        @enderror" value="{{ old('pimpinan') }}" id="level">
+                        @error('pimpinan')
                             <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
                     </div>

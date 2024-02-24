@@ -5,7 +5,7 @@
 <!-- Plugin Scripts -->
 <!-- Tour plugin Start -->
 <script src="{{ asset('template/assets/vendor/sheperd/dist/js/sheperd.min.js') }}"></script>
-<script src="{{ asset('template/assets/js/plugins/tour.js') }}"></script>
+{{-- <script src="{{ asset('template/assets/js/plugins/tour.js') }}"></script> --}}
 
 
 <!-- Flatpickr Script -->
