@@ -10,6 +10,6 @@ class RekeningStruktur extends Model
     use HasFactory;
 
     protected $table = "rekening_strukturs";
-    protected $fillable = ['kd_rekening','nm_rekening'];
+    protected $fillable = ['kd_rekening', 'nm_rekening'];
 
 }

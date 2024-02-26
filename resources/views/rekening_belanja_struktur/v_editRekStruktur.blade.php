@@ -28,12 +28,12 @@
                 </div>
             </div>
             <div class="card-body flex-grow-1">
-                <form method="post" action="{{ route('rekstruktur.createrekening') }}">
+                <form method="post" action="{{ route('rekstruktur.update', $rekening->id) }}">
                     @csrf
                     <div class="form-group">
                         <label class="form-label" for="level">Kode Rekening:</label>
                         <input type="text" name="kd_rekening" class="form-control @error('kd_rekening') is invalid
-                        @enderror" value="{{ old('kd_rekening') }}" id="kd_rekening">
+                        @enderror" value="{{ $rekening->kd_rekening ?? old('kd_rekening') }}" id="kd_rekening">
                         @error('kd_rekening')
                             <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
@@ -41,7 +41,7 @@
                     <div class="form-group">
                         <label class="form-label" for="level">Nama Rekening :</label>
                         <input type="text" name="nm_rekening" class="form-control @error('nm_rekening') is invalid
-                        @enderror" value="{{ old('nm_rekening') }}" id="nm_rekening">
+                        @enderror" value="{{ $rekening->nm_rekening ?? old('nm_rekening') }}" id="nm_rekening">
                         @error('nm_rekening')
                             <div class="alert alert-danger">{{ $message }}</div>
                         @enderror

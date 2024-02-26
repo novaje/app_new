@@ -7,8 +7,10 @@ use App\Http\Controllers\levelController;
 use App\Http\Controllers\loginController;
 use App\Http\Controllers\obatController;
 use App\Http\Controllers\regisController;
+use App\Http\Controllers\RekKelompokController;
 use App\Http\Controllers\RekStrukturController;
 use App\Http\Controllers\unitController;
+use App\Models\RekeningStruktur;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -65,3 +67,12 @@ Route::get('cari-ketegori', [obatController::class, 'cari']);
 
 // rekening struktur
 Route::get('/data-rekening-struktur', [RekStrukturController::class, 'rekeningStruktur'])->name('rekstruktur.v_rekstruktur');
+Route::get('/add-rekening-struktur', [RekStrukturController::class, 'create'])->name('rekstruktur.v_addRekStruktur');
+Route::post('/simpan-rekening', [RekStrukturController::class, 'createrekening'])->name('rekstruktur.createrekening');
+Route::get('/rekening/{rekening}/edit', [RekStrukturController::class,'edit'])->name('rekstruktur.edit');
+Route::post('/rekening/{rekening}/update', [RekStrukturController::class, 'update'])->name('rekstruktur.update');
+Route::delete('/rekening/{rekening}', [RekStrukturController::class, 'destroy'])->name('rekstruktur.destroy');
+
+// rekening kelompok
+Route::get('data-rekening-kelompok', [RekKelompokController::class, 'rekKelompok'])->name('rekkelompok.v_rekeningKelompok');
+

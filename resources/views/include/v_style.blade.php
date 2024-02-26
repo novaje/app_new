@@ -18,6 +18,3 @@
  <!-- RTL Css -->
 <link rel="stylesheet" href="{{asset('template/assets/css/rtl.min.css')}}">
 <link rel="stylesheet" href="{{asset('template/assets/vendor/swiperSlider/swiper-bundle.min.css')}}">
-
-{{-- login --}}
-{{-- <link rel="StyleSheet" href="{{ ('template/login_.css') }}" /> --}}
