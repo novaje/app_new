@@ -33,7 +33,7 @@
                     <div class="form-group">
                         <label class="form-label" for="level">Tahun:</label>
                         <input type="number" name="tahun" class="form-control @error('tahun') is invalid
-                        @enderror" value="{{ old('tahun') }}" id="level">
+                        @enderror" value="{{ old('tahun') }}" id="level" maxlength="4">
                         @error('tahun')
                             <div class="alert alert-danger">{{ $message }}</div>
                         @enderror

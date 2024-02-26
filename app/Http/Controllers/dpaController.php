@@ -16,6 +16,7 @@ class dpaController extends Controller
             "tittle" => "Data DPA",
             "dataDpa" => $dp
         ];
+        // dd($dp);
         return view('data_dpa.v_data_dpa', $data);
     }
 
@@ -33,7 +34,7 @@ class dpaController extends Controller
             'no_dpa' => 'string|required',
             'tgl_dppa' => 'date|required',
             'tgl_dpa' => 'date|required',
-            'tahun' => 'digits:4|required'
+            'tahun' => 'string|required'
         ]);
 
         $dpa = dt_dpa::create($validateData);
@@ -47,7 +48,7 @@ class dpaController extends Controller
 
     public function edit(dt_dpa $dpa)
     {
-        return view('data_dpa.v_data_dpa', compact('dpa'));
+        return view('data_dpa.v_editcreate', compact('dpa'));
     }
     public function update(Request $request, dt_dpa $dpa)
     {
@@ -58,7 +59,7 @@ class dpaController extends Controller
             'no_dpa' => 'string|required',
             'tgl_dppa' => 'date|required',
             'tgl_dpa' => 'date|required',
-            'tahun' => 'digits:4|required'
+            'tahun' => 'string|required'
         ]);
         $dpa->update($validateData);
 
@@ -69,4 +70,13 @@ class dpaController extends Controller
         }
     }
 
+    public function destroy(dt_dpa $dpa)
+    {
+        $dpa->delete();
+        if($dpa){
+            return to_route('dpa.v_data_dpa')->with('success', 'Berhasil Edit Data Program');
+        } else {
+            return to_route('dpa.v_data_dpa')->with('failed', 'Gagal Hapus Data Program');
+        }
+    }
 }

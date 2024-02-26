@@ -12,10 +12,10 @@ class unitController extends Controller
     // tampilkan unit
     public function unit()
     {
-        $units = unit_puskesmas::all();
+        $unit = unit_puskesmas::all();
         $data = [
             "tittle" => "Data Unit Puskesmas",
-            "dataUnit" => $units
+            "dataUnit" => $unit
         ];
         return view('unit_puskesmas.v_unit', $data);
     }
@@ -35,9 +35,9 @@ class unitController extends Controller
             'pimpinan' => 'string|required'
         ]);
 
-        $units = unit_puskesmas::create($validateData);
+        $unit = unit_puskesmas::create($validateData);
 
-        if($units){
+        if($unit){
             return to_route('unit_puskesmas.v_unit')->with('success', 'Berhasil Menambah Unit');
         } else {
             return to_route('unit_puskesmas.v_unit')->with('failed', 'Gagal Menambah Unit');

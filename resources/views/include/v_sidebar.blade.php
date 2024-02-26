@@ -31,7 +31,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="dashboard/index.html">
+                    <a class="nav-link active" aria-current="page" href="{{ route('home.v_home') }}">
                         <i class="icon" data-bs-toggle="tooltip" title="Dashboard" data-bs-placement="right">
                             <svg width="20" class="icon-20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path opacity="0.4" d="M16.0756 2H19.4616C20.8639 2 22.0001 3.14585 22.0001 4.55996V7.97452C22.0001 9.38864 20.8639 10.5345 19.4616 10.5345H16.0756C14.6734 10.5345 13.5371 9.38864 13.5371 7.97452V4.55996C13.5371 3.14585 14.6734 2 16.0756 2Z" fill="currentColor"></path>
@@ -109,7 +109,7 @@
                             </a>
                             <ul class="sub-nav collapse" id="rekening-belanja" data-bs-parent="#master-data">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="dashboard/plugins/apexcharts.html">
+                                    <a class="nav-link" href="{{ route('rekstruktur.v_rekstruktur') }}">
                                         <i class="icon">
                                             <svg class="icon-10" width="10" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                 <g>
@@ -203,7 +203,7 @@
                             </a>
                             <ul class="sub-nav collapse" id="obat-alkes" data-bs-parent="#master-data">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="dashboard/plugins/apexcharts.html">
+                                    <a class="nav-link" href="{{ route('obat.v_obat') }}">
                                         <i class="icon">
                                             <svg class="icon-10" width="10" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                 <g>

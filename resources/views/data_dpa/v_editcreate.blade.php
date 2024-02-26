@@ -33,7 +33,7 @@
                     <div class="form-group">
                         <label class="form-label" for="level">Tahun:</label>
                         <input type="number" name="tahun" class="form-control @error('tahun') is invalid
-                        @enderror" value="{{ old('tahun') }}" id="level">
+                        @enderror" value="{{ $dpa->tahun ?? old('tahun') }}" id="level">
                         @error('tahun')
                             <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
@@ -41,7 +41,7 @@
                     <div class="form-group">
                         <label class="form-label" for="level">Tanggal DPA :</label>
                         <input type="date" name="tgl_dpa" class="form-control @error('tgl_dpa') is invalid
-                        @enderror" value="{{ old('tgl_dpa') }}" id="tgl_dpa">
+                        @enderror" value="{{ $dpa->tgl_dpa ?? old('tgl_dpa') }}" id="tgl_dpa">
                         @error('tgl_dpa')
                             <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
@@ -49,7 +49,7 @@
                     <div class="form-group">
                         <label class="form-label" for="level">Tanggal DPPA :</label>
                         <input type="date" name="tgl_dppa" class="form-control @error('tgl_dppa') is invalid
-                        @enderror" value="{{ old('tgl_dppa') }}" id="level">
+                        @enderror" value="{{ $dpa->tgl_dppa ?? old('tgl_dppa') }}" id="level">
                         @error('tgl_dppa')
                             <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
@@ -57,7 +57,7 @@
                     <div class="form-group">
                         <label class="form-label" for="level">No. DPA :</label>
                         <input type="text" name="no_dpa" class="form-control @error('no_dpa') is invalid
-                        @enderror" value="{{ old('no_dpa') }}" id="level">
+                        @enderror" value="{{ $dpa->no_dpa ?? old('no_dpa') }}" id="level">
                         @error('no_dpa')
                             <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
@@ -65,7 +65,7 @@
                     <div class="form-group">
                         <label class="form-label" for="level">No. DPPA :</label>
                         <input type="text" name="no_dppa" class="form-control @error('no_dppa') is invalid
-                        @enderror" value="{{ old('no_dppa') }}" id="level">
+                        @enderror" value="{{ $dpa->no_dppa ?? old('no_dppa') }}" id="level">
                         @error('no_dppa')
                             <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
@@ -73,7 +73,7 @@
                     <div class="form-group">
                         <label class="form-label" for="level">Program :</label>
                         <input type="text" name="program" class="form-control @error('program') is invalid
-                        @enderror" value="{{ old('program') }}" id="level">
+                        @enderror" value="{{ $dpa->program ?? old('program') }}" id="level">
                         @error('program')
                             <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
@@ -81,7 +81,7 @@
                     <div class="form-group">
                         <label class="form-label" for="level">Kegiatan :</label>
                         <input type="text" name="kegiatan" class="form-control @error('kegiatan') is invalid
-                        @enderror" value="{{ old('kegiatan') }}" id="level">
+                        @enderror" value="{{ $dpa->kegiatan ?? old('kegiatan') }}" id="level">
                         @error('kegiatan')
                             <div class="alert alert-danger">{{ $message }}</div>
                         @enderror

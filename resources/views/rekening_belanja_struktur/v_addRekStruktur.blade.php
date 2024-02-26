@@ -24,41 +24,25 @@
         <div class="card d-flex flex-column h-100">
             <div class="card-header d-flex justify-content-between">
                 <div class="header-title">
-                    <h4 class="card-title">Form Edit Unit/ Puskesmas</h4>
+                    <h4 class="card-title">Form Tambah Unit/ Puskesmas</h4>
                 </div>
             </div>
             <div class="card-body flex-grow-1">
-                <form method="post" action="{{ route('unit_puskesmas.update', $unit->id) }}">
+                <form method="post" action="{{ route('unit_puskesmas.createunit') }}">
                     @csrf
                     <div class="form-group">
-                        <label class="form-label" for="level">Nama Puskesmas:</label>
-                        <input type="text" name="nama_puskesmas" class="form-control @error('nama_puskesmas') is invalid
-                        @enderror" value="{{ $unit->nama_puskesmas ?? old('nama_puskesmas') }}" id="nama_puskesmas">
-                        @error('nama_puskesmas')
+                        <label class="form-label" for="level">Kode Rekening:</label>
+                        <input type="text" name="kd_rekening" class="form-control @error('kd_rekening') is invalid
+                        @enderror" value="{{ old('kd_rekening') }}" id="kd_rekening">
+                        @error('kd_rekening')
                             <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
                     </div>
                     <div class="form-group">
-                        <label class="form-label" for="level">Status :</label>
-                        <input type="text" name="status" class="form-control @error('status') is invalid
-                        @enderror" value="{{ $unit->status ?? old('status') }}" id="status">
-                        @error('status')
-                            <div class="alert alert-danger">{{ $message }}</div>
-                        @enderror
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label" for="level">Alamat :</label>
-                        <input type="text" name="alamat" class="form-control @error('alamat') is invalid
-                        @enderror" value="{{ $unit->alamat ?? old('alamat') }}" id="level">
-                        @error('alamat')
-                            <div class="alert alert-danger">{{ $message }}</div>
-                        @enderror
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label" for="level">Pimpinan :</label>
-                        <input type="text" name="pimpinan" class="form-control @error('pimpinan') is invalid
-                        @enderror" value="{{ $unit->pimpinan ?? old('pimpinan') }}" id="level">
-                        @error('pimpinan')
+                        <label class="form-label" for="level">Nama Rekening :</label>
+                        <input type="text" name="nm_rekening" class="form-control @error('nm_rekening') is invalid
+                        @enderror" value="{{ old('nm_rekening') }}" id="nm_rekening">
+                        @error('nm_rekening')
                             <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
                     </div>

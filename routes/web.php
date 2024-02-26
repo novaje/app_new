@@ -5,7 +5,9 @@ use App\Http\Controllers\dpaController;
 use App\Http\Controllers\homeController;
 use App\Http\Controllers\levelController;
 use App\Http\Controllers\loginController;
+use App\Http\Controllers\obatController;
 use App\Http\Controllers\regisController;
+use App\Http\Controllers\RekStrukturController;
 use App\Http\Controllers\unitController;
 use Illuminate\Support\Facades\Route;
 
@@ -21,10 +23,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('kerangka.v_dashboard');
+    return redirect('/home');
 });
 
-Route::get('/home', [homeController::class, 'index']);
+Route::get('home', [homeController::class, 'index'])->name('home.v_home');
 
 Route::get('/sign', [loginController::class, 'index'])->name('sign');
 Route::get('/register', [regisController::class, 'index'])->name('regis');
@@ -56,3 +58,10 @@ Route::post('/simpan', [dpaController::class, 'createdpa'])->name('dpa.createdpa
 Route::get('/dpa/{dpa}/edit', [dpaController::class, 'edit'])->name('dpa.edit');
 Route::post('/dpa/{dpa}/update', [dpaController::class, 'update'])->name('dpa.update');
 Route::delete('/dpa/{dpa}', [dpaController::class, 'destroy'])->name('dpa.destroy');
+
+// obat
+Route::get('data-obat', [obatController::class, 'obat'])->name('obat.v_obat');
+Route::get('cari-ketegori', [obatController::class, 'cari']);
+
+// rekening struktur
+Route::get('/data-rekening-struktur', [RekStrukturController::class, 'rekeningStruktur'])->name('rekstruktur.v_rekstruktur');

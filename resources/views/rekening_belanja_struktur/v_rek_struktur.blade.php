@@ -7,12 +7,12 @@
        <div class="card w-100">
           <div class="card-header d-flex justify-content-between">
              <div class="header-title">
-             <h4 class="card-title text-center">DATA DPA-DPPA/ PROGRAM-KEGIATAN DANA BOS</h4> <br>
-             <a class="btn btn-success" href="{{ route('dpa.v_create_dpa') }}">
-                <span class="qompac-icon qompac-icon-plus"></span> Tambah Program Kegiatan
+             <h4 class="card-title text-center">DATA REKENING-STRUKTUR</h4> <br>
+             <a class="btn btn-success" href="{{ route('unit_puskesmas.v_createunit') }}">
+                <span class="qompac-icon qompac-icon-plus"></span> Tambah Rekening
             </a>                 
              </div>
-             @if (session()->has('success'))
+             {{-- @if (session()->has('success'))
              <div class="alert alert-success alert-dismissible fade show" role="alert">
                  {{ session('success') }}
                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
@@ -22,7 +22,7 @@
                  {{ session('failed') }}
                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
              </div>
-         @endif        
+         @endif     --}}
           </div>
           <div class="card-body">
              <div class="table-responsive border rounded">
@@ -31,31 +31,20 @@
                 <thead>
                     <tr>
                         <th>No</th>
-                        <th>Tahun</th>
-                        <th>Tgl. DPA</th>
-                        <th>Tgl/ DPPA</th>
-                        <th>No. DPA</th>
-                        <th>No. DPPA</th>
-                        <th>Program</th>
-                        <th>Kegiatan</th>
-                        <th>Proses</th>
+                        <th>Kode Rekening</th>
+                        <th>Nama Rekening</th>
                     </tr>
                 </thead>
                 <tbody>
-                   @foreach ($dataDpa as $data)
+                   @foreach ($dataRekening as $data)
                    <tr>
                       <td>{{ $loop->iteration }}</td>
-                      <td>{{ $data->tahun }}</td>
-                      <td>{{ \Carbon\Carbon::parse($data->tgl_dpa)->format('d-m-Y') }}</td>
-                      <td>{{ \Carbon\Carbon::parse($data->tgl_dppa)->format('d-m-Y') }}</td>
-                      <td>{{ $data->no_dpa }}</td>
-                      <td>{{ $data->no_dppa }}</td>
-                      <td>{{ $data->program }}</td>
-                      <td>{{ $data->kegiatan }}</td>
-                      <td>
+                      <td>{{ $data->kd_rekening }}</td>
+                      <td>{{ $data->nm_rekening }}</td>
+                      {{-- <td>
                         <div class="flex">
                             <div class="d-flex justify-content-evenly">
-                                <a class="btn btn-primary btn-icon btn-sm rounded-pill ms-2" href="{{ route('dpa.edit', $data->id) }}" role="button">
+                                <a class="btn btn-primary btn-icon btn-sm rounded-pill ms-2" href="{{ route('unit_puskesmas.edit', $data->id) }}" role="button">
                                     <span class="btn-inner">
                                         <svg class="icon-32" width="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path opacity="0.4" d="M19.9927 18.9534H14.2984C13.7429 18.9534 13.291 19.4124 13.291 19.9767C13.291 20.5422 13.7429 21.0001 14.2984 21.0001H19.9927C20.5483 21.0001 21.0001 20.5422 21.0001 19.9767C21.0001 19.4124 20.5483 18.9534 19.9927 18.9534Z" fill="currentColor"></path>
@@ -64,7 +53,7 @@
                                         </svg>
                                     </span>
                                 </a>
-                                <form action="{{ route('dpa.destroy', $data->id) }}" method="POST">
+                                <form action="{{ route('unit_puskesmas.destroy', $data->id) }}" method="POST">
                                     @csrf
                                     @method('delete')
                                     <button class="btn btn-primary btn-icon btn-sm rounded-pill ms-2" type="">
@@ -78,7 +67,7 @@
                                 </form>                                                       
                             </div>
                         </div>
-                      </td>
+                      </td> --}}
                    </tr>
                    @endforeach
                 </tbody>
