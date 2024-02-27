@@ -74,5 +74,9 @@ Route::post('/rekening/{rekening}/update', [RekStrukturController::class, 'updat
 Route::delete('/rekening/{rekening}', [RekStrukturController::class, 'destroy'])->name('rekstruktur.destroy');
 
 // rekening kelompok
-Route::get('data-rekening-kelompok', [RekKelompokController::class, 'rekKelompok'])->name('rekkelompok.v_rekeningKelompok');
-
+Route::get('/data-rekening-kelompok', [RekKelompokController::class, 'datarekening'])->name('rekkelompok.datarekening');
+Route::get('/add-rekening-kelompok', [RekKelompokController::class, 'addRekening'])->name('rekkelompok.addRekening');
+Route::post('/simpan-rekening', [RekKelompokController::class, 'createrekening'])->name('rekkelompok.createrekening');
+Route::get('/rekening/{rekening}/edit', [RekKelompokController::class, 'edit'])->name('rekkelompok.edit');
+Route::post('/rekening/{rekening}/update', [RekKelompokController::class, 'update'])->name('rekkelompok.update');
+Route::delete('/rekening/{rekening}', [RekKelompokController::class, 'destroy'])->name('rekkelompok.destroy');

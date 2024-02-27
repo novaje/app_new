@@ -11,8 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('rekening_strukturs', function (Blueprint $table) {
-            //
+        Schema::create('rekening_kelompoks', function (Blueprint $table) {
+            $table->id();
+            $table->string('kd_rekening_1');
+            $table->string('kd_rekening_2');
+            $table->string('nm_rekening');
+            $table->timestamps();
         });
     }
 
@@ -21,8 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('rekening_strukturs', function (Blueprint $table) {
-            //
-        });
+        Schema::dropIfExists('rekening_kelompoks');
     }
 };
