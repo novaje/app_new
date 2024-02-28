@@ -24,17 +24,33 @@
         <div class="card d-flex flex-column h-100">
             <div class="card-header d-flex justify-content-between">
                 <div class="header-title">
-                    <h4 class="card-title">Form Edit Rekening-Struktur</h4>
+                    <h4 class="card-title">Form Tambah Edit-Struktur</h4>
                 </div>
             </div>
             <div class="card-body flex-grow-1">
-                <form method="post" action="{{ route('rekstruktur.update', $rekening->id) }}">
+                <form method="post" action="{{ route('rekjenis.update', $rekening->id) }}">
                     @csrf
                     <div class="form-group">
-                        <label class="form-label" for="level">Kode Rekening:</label>
-                        <input type="text" name="kd_rekening" class="form-control @error('kd_rekening') is invalid
-                        @enderror" value="{{ $rekening->kd_rekening ?? old('kd_rekening') }}" id="kd_rekening">
-                        @error('kd_rekening')
+                        <label class="form-label" for="level">Kode Rekening 1:</label>
+                        <input type="text" name="kd_rekening_1" class="form-control @error('kd_rekening_1') is invalid
+                        @enderror" value="{{ $rekening->kd_rekening_1 ?? old('kd_rekening_1') }}" id="kd_rekening_1">
+                        @error('kd_rekening_1')
+                            <div class="alert alert-danger">{{ $message }}</div>
+                        @enderror
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="level">Kode Rekening 2:</label>
+                        <input type="text" name="kd_rekening_2" class="form-control @error('kd_rekening_2') is invalid
+                        @enderror" value="{{ $rekening->kd_rekening_2 ?? old('kd_rekening_2') }}" id="kd_rekening_2">
+                        @error('kd_rekening_2')
+                            <div class="alert alert-danger">{{ $message }}</div>
+                        @enderror
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="level">Kode Rekening 3:</label>
+                        <input type="text" name="kd_rekening_3" class="form-control @error('kd_rekening_3') is invalid
+                        @enderror" value="{{ $rekening->kd_rekening_3 ?? old('kd_rekening_3') }}" id="kd_rekening_3">
+                        @error('kd_rekening_3')
                             <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
                     </div>

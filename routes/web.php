@@ -7,7 +7,9 @@ use App\Http\Controllers\levelController;
 use App\Http\Controllers\loginController;
 use App\Http\Controllers\obatController;
 use App\Http\Controllers\regisController;
+use App\Http\Controllers\RekJenisController;
 use App\Http\Controllers\RekKelompokController;
+use App\Http\Controllers\RekObjectController;
 use App\Http\Controllers\RekStrukturController;
 use App\Http\Controllers\unitController;
 use App\Models\RekeningStruktur;
@@ -80,3 +82,16 @@ Route::post('/simpan-rekening', [RekKelompokController::class, 'createrekening']
 Route::get('/rekening/{rekening}/edit', [RekKelompokController::class, 'edit'])->name('rekkelompok.edit');
 Route::post('/rekening/{rekening}/update', [RekKelompokController::class, 'update'])->name('rekkelompok.update');
 Route::delete('/rekening/{rekening}', [RekKelompokController::class, 'destroy'])->name('rekkelompok.destroy');
+ 
+// rekening jenis
+Route::get('/data-rekening-jenis', [RekJenisController::class, 'rekening'])->name('rekjenis.rekening');
+Route::get('/add-rekening-jenis', [RekJenisController::class, 'addRekeningJenis'])->name('rekjenis.addRekeningJenis');
+Route::post('/simpan-rekening-jenis', [RekJenisController::class, 'saveRekening'])->name('rekjenis.saveRekening');
+Route::get('/rekening{rekening}/edit', [RekJenisController::class, 'edit'])->name('rekjenis.edit');
+Route::get('/rekening/{rekening}/update', [RekJenisController::class, 'update'])->name('rekjenis.update');
+Route::delete('/rekening/{rekening}', [RekJenisController::class, 'destroy'])->name('rekjenis.destroy');
+
+// rekening object
+Route::get('/data-rekening-object', [RekObjectController::class, 'rekeningObject'])->name('rekobject.rekeningObject');
+Route::get('/add-rekening-object', [RekObjectController::class, 'create'])->name('rekobject.create');
+Route::post('/simpan-rekening-object', [RekObjectController::class, 'saveRekening'])->name('rekobject.saveRekening');
