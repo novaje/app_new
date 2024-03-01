@@ -11,4 +11,9 @@ class RekeningObject extends Model
 
     protected $table = "rekening_objects";
     protected $fillable = ['kd_rekening', 'nm_rekening'];
+    
+    public function RekObject()
+    {
+        return $this->hasMany(RekObjectTambah::class);
+    }
 }

@@ -38,3 +38,6 @@
 <!-- qompacui Script -->
 <script src="{{ asset('template/assets/js/qompac-ui.js') }}"></script>
 <script src="{{ asset('template/assets/js/sidebar.js') }}"></script>
+
+<!-- Bootstrap JS -->
+{{-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> --}}

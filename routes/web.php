@@ -95,3 +95,4 @@ Route::delete('/rekening/{rekening}', [RekJenisController::class, 'destroy'])->n
 Route::get('/data-rekening-object', [RekObjectController::class, 'rekeningObject'])->name('rekobject.rekeningObject');
 Route::get('/add-rekening-object', [RekObjectController::class, 'create'])->name('rekobject.create');
 Route::post('/simpan-rekening-object', [RekObjectController::class, 'saveRekening'])->name('rekobject.saveRekening');
+Route::get('/rekobject', [RekObjectController::class, 'getRekening'])->name('rekobject.getRekening');

@@ -47,4 +47,5 @@ class RekObjectController extends Controller
             return redirect()->route('rekobject.rekeningObject')->with('failed', 'Gagal menambahkan data!');
         }
     }
+
 }
