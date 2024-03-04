@@ -12,11 +12,12 @@ class unitController extends Controller
     // tampilkan unit
     public function unit()
     {
-        $unit = unit_puskesmas::all();
+        $units = unit_puskesmas::all();
         $data = [
             "tittle" => "Data Unit Puskesmas",
-            "dataUnit" => $unit
+            "dataUnit" => $units
         ];
+        
         return view('unit_puskesmas.v_unit', $data);
     }
 

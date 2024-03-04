@@ -308,7 +308,7 @@
                     </a>
                     <ul class="sub-nav collapse" id="utilities-error" data-bs-parent="#sidebar-menu">
                         <li class="nav-item">
-                            <a class="nav-link " href="dashboard/errors/error404.html">
+                            <a class="nav-link " href="{{ route('saldoawal.saldoTahunan') }}">
                                 <i class="icon" data-bs-toggle="tooltip" title="Awal" data-bs-placement="right">
                                     <svg class="icon-10" width="10" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                         <g>
