@@ -33,7 +33,7 @@
                     <div class="form-group">
                         <label class="form-label" for="level">Kode Rekening 1:</label>
                         <input type="text" name="kd_rekening_1" class="form-control @error('kd_rekening_1') is invalid
-                        @enderror" value="{{ $rekening->kd_rekening_1 ?? old('kd_rekening_1') }}" id="kd_rekening_1">
+                        @enderror" value="{{ $rekening->kd_rekening_1 ?? old('kd_rekening_1') }}" id="kd_rekening_1" style="max-width: 350px;">
                         @error('kd_rekening_1')
                             <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
@@ -41,7 +41,7 @@
                     <div class="form-group">
                         <label class="form-label" for="level">Kode Rekening 2:</label>
                         <input type="text" name="kd_rekening_2" class="form-control @error('kd_rekening_2') is invalid
-                        @enderror" value="{{ $rekening->kd_rekening_2 ?? old('kd_rekening_2') }}" id="kd_rekening_2">
+                        @enderror" value="{{ $rekening->kd_rekening_2 ?? old('kd_rekening_2') }}" id="kd_rekening_2" style="max-width: 350px;">
                         @error('kd_rekening_2')
                             <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
@@ -49,7 +49,7 @@
                     <div class="form-group">
                         <label class="form-label" for="level">Nama Rekening :</label>
                         <input type="text" name="nm_rekening" class="form-control @error('nm_rekening') is invalid
-                        @enderror" value="{{ $rekening->nm_rekening ?? old('nm_rekening') }}" id="nm_rekening">
+                        @enderror" value="{{ $rekening->nm_rekening ?? old('nm_rekening') }}" id="nm_rekening" style="max-width: 350px;">
                         @error('nm_rekening')
                             <div class="alert alert-danger">{{ $message }}</div>
                         @enderror

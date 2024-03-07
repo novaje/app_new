@@ -23,4 +23,20 @@ class SaldoAwalTahunController extends Controller
     {
         return view('saldo_awal_tahun.v_addSaldoAwal');
     }
+
+    public function addSaldo(Request $request)
+    {
+        $validateData = $request->validate([
+            'tahun_anggaran' => 'string|required',
+            'saldo_bank' => 'string|required',
+            'saldo_tunai' => 'string|required'
+        ]);
+
+        $saldo_awal = SaldoAwalTahun::create($validateData);
+        if ($saldo_awal) {
+            return redirect()->route('saldoawal.saldoTahunan')->with('success', 'Berhasil menambahkan data!');
+        } else {
+            return redirect()->route('saldoawal.saldoTahunan')->with('failed', 'Gagal menambahkan data!');
+        }
+    }
 }

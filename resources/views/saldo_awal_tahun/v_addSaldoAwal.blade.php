@@ -32,13 +32,13 @@
                     @csrf
                     <div class="form-group">
                         <label class="form-label" for="level">Anggaran Tahun :</label>
-                        <input type="text" name="tahun_anggaran" class="form-control @error('tahun_anggaran') is invalid
+                        <input type="number" name="tahun_anggaran" class="form-control @error('tahun_anggaran') is invalid
                         @enderror" value="{{ old('tahun_anggaran') }}" id="tahun_anggaran">
                         @error('tahun_anggaran')
                             <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
                     </div>
-                    <div class="form-group">
+                    {{-- <div class="form-group">
                         @foreach($dataSaldo as $saldoAwalTahun)
                             <label class="form-label" for="level">Nama Puskesmas :</label>
                             <select name="nama_puskesmas" class="form-control @error('nama_puskesmas') is-invalid @enderror" id="nama_puskesmas">
@@ -50,7 +50,7 @@
                                 <div class="alert alert-danger">{{ $message }}</div>
                             @enderror
                         @endforeach
-                    </div>                                
+                    </div>                                 --}}
                     <div class="form-group">
                         <label class="form-label" for="level">Saldo Bank :</label>
                         <input type="text" name="saldo_bank" class="form-control @error('saldo_bank') is invalid

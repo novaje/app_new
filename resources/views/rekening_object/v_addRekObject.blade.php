@@ -33,7 +33,7 @@
                     <div class="form-group">
                         <label class="form-label" for="level">Kode Rekening:</label>
                         <input type="text" name="kd_rekening" class="form-control @error('kd_rekening') is invalid
-                        @enderror" value="{{ old('kd_rekening') }}" id="kd_rekening">
+                        @enderror" value="{{ old('kd_rekening') }}" id="kd_rekening" style="max-width: 350px;">
                         @error('kd_rekening')
                             <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
@@ -41,7 +41,7 @@
                     <div class="form-group">
                         <label class="form-label" for="level">Nama Rekening :</label>
                         <input type="text" name="nm_rekening" class="form-control @error('nm_rekening') is invalid
-                        @enderror" value="{{ old('nm_rekening') }}" id="nm_rekening">
+                        @enderror" value="{{ old('nm_rekening') }}" id="nm_rekening" style="max-width: 350px;">
                         @error('nm_rekening')
                             <div class="alert alert-danger">{{ $message }}</div>
                         @enderror

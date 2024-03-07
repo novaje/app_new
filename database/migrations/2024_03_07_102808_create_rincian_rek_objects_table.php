@@ -11,10 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('rek_object_tambah', function (Blueprint $table) {
-            $table->id('id_rekObject');
-            $table->string('kd_rekening1', 10);
-            $table->string('nm_rekening1');
+        Schema::create('rincian_rek_object', function (Blueprint $table) {
+            $table->id('id_rincian');
+            $table->string('kd_rek_object', 50);
+            $table->string('nm_rekning');
             $table->timestamps();
         });
     }
@@ -24,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('rek_object_tambah');
+        Schema::dropIfExists('rincian_rek_object');
     }
 };

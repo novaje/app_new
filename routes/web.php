@@ -11,6 +11,8 @@ use App\Http\Controllers\RekJenisController;
 use App\Http\Controllers\RekKelompokController;
 use App\Http\Controllers\RekObjectController;
 use App\Http\Controllers\RekStrukturController;
+use App\Http\Controllers\RincianRekObjectController;
+use App\Http\Controllers\SaldoAwalBungaController;
 use App\Http\Controllers\SaldoAwalTahunController;
 use App\Http\Controllers\unitController;
 use App\Models\RekeningStruktur;
@@ -98,6 +100,14 @@ Route::get('/add-rekening-object', [RekObjectController::class, 'create'])->name
 Route::post('/simpan-rekening-object', [RekObjectController::class, 'saveRekening'])->name('rekobject.saveRekening');
 Route::get('/rekobject', [RekObjectController::class, 'getRekening'])->name('rekobject.getRekening');
 
+// rekening object rincian
+Route::get('/data-rincian-rekening objek', [RincianRekObjectController::class, 'rincianRekening'])->name('RincianRekening.rincianRekening');
+Route::get('/add-rincian-rekening', [RincianRekObjectController::class, 'addRincianRekening'])->name('rincian_rekening.add_rincian_rekening');
+Route::post('/simpan-rincian-rekening', [RincianRekObjectController::class, 'saveRincian'])->name('rincian_rekening.save_rincian');
+
 // Penataushaan (saldo Awal-> saldo awal tahun)
 Route::get('/data-saldo-awal-tahun', [SaldoAwalTahunController::class, 'saldoAwal'])->name('saldoawal.saldoTahunan');
 Route::get('/add-saldo-awal', [SaldoAwalTahunController::class, 'viewSaldo'])->name('saldoawal.viewSaldo');
+Route::post('/simpan-saldo-awal-tahun', [SaldoAwalTahunController::class, 'addSaldo'])->name('saldoawal.addSaldo');
+// Penataushaan (saldo Awal-> saldo awal bunga bank)
+Route::get('/data-saldo-bunga-bank', [SaldoAwalBungaController::class, 'saldoAwalBunga']);

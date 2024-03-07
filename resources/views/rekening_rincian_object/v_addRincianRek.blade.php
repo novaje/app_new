@@ -24,33 +24,24 @@
         <div class="card d-flex flex-column h-100">
             <div class="card-header d-flex justify-content-between">
                 <div class="header-title">
-                    <h4 class="card-title">Form Tambah Rekening-Kelompok</h4>
+                    <h4 class="card-title">Form Tambah Rincian-Rekening Objek</h4>
                 </div>
             </div>
             <div class="card-body flex-grow-1">
-                <form method="post" action="{{ route('rekkelompok.createrekening') }}">
+                <form method="post" action="{{ route('rincian_rekening.save_rincian') }}">
                     @csrf
                     <div class="form-group">
-                        <label class="form-label" for="level">Kode Rekening 1:</label>
-                        <input type="text" name="kd_rekening_1" class="form-control @error('kd_rekening_1') is invalid
-                        @enderror" value="{{ old('kd_rekening_1') }}" id="kd_rekening_1" style="max-width: 350px;">
-                        @error('kd_rekening_1')
+                        <label class="form-label" for="level">Kode Rekening:</label>
+                        <input type="text" name="kd_rek_object" class="form-control @error('kd_rek_object') is-invalid @enderror" value="{{ old('kd_rek_object') }}" id="kd_rek_object" style="max-width: 350px;">
+                        @error('kd_rek_object')
                             <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label" for="level">Kode Rekening 2:</label>
-                        <input type="text" name="kd_rekening_2" class="form-control @error('kd_rekening_2') is invalid
-                        @enderror" value="{{ old('kd_rekening_2') }}" id="kd_rekening_2" style="max-width: 350px;">
-                        @error('kd_rekening_2')
-                            <div class="alert alert-danger">{{ $message }}</div>
-                        @enderror
-                    </div>
+                    </div>                    
                     <div class="form-group">
                         <label class="form-label" for="level">Nama Rekening :</label>
-                        <input type="text" name="nm_rekening" class="form-control @error('nm_rekening') is invalid
-                        @enderror" value="{{ old('nm_rekening') }}" id="nm_rekening" style="max-width: 350px;">
-                        @error('nm_rekening')
+                        <input type="text" name="nm_rekning" class="form-control @error('nm_rekning') is invalid
+                        @enderror" value="{{ old('nm_rekning') }}" id="nm_rekning" style="max-width: 350px;">
+                        @error('nm_rekning')
                             <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
                     </div>

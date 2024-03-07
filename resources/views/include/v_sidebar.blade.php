@@ -161,7 +161,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="dashboard/plugins/apexcharts.html">
+                                    <a class="nav-link" href="{{ route('RincianRekening.rincianRekening') }}">
                                         <i class="icon">
                                             <svg class="icon-10" width="10" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                 <g>
@@ -192,7 +192,6 @@
                         <li class="nav-item">
                             <a class="nav-link" data-bs-toggle="collapse" href="#obat-alkes" role="button" aria-expanded="false" aria-controls="obat-alkes">
                                 <i class="icon" data-bs-toggle="tooltip" title="Rekening Belanja" data-bs-placement="right">
-                                    <!-- ... (icon SVG untuk Rekening Belanja) ... -->
                                 </i>
                                 <span class="item-name">Obat dan Alkes</span>
                                 <i class="right-icon">
@@ -308,16 +307,44 @@
                     </a>
                     <ul class="sub-nav collapse" id="utilities-error" data-bs-parent="#sidebar-menu">
                         <li class="nav-item">
-                            <a class="nav-link " href="{{ route('saldoawal.saldoTahunan') }}">
-                                <i class="icon" data-bs-toggle="tooltip" title="Awal" data-bs-placement="right">
-                                    <svg class="icon-10" width="10" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                        <g>
-                                        <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
-                                        </g>
-                                    </svg>
+                            <a class="nav-link" data-bs-toggle="collapse" href="#rekening-belanja" role="button" aria-expanded="false" aria-controls="rekening-belanja">
+                                <i class="icon" data-bs-toggle="tooltip" title="Rekening Belanja" data-bs-placement="right">
                                 </i>
                                 <span class="item-name">Saldo Awal</span>
+                                <i class="right-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" class="icon-18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </i>
                             </a>
+                            <ul class="sub-nav collapse" id="rekening-belanja" data-bs-parent="#master-data">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('saldoawal.saldoTahunan') }}">
+                                        <i class="icon">
+                                            <svg class="icon-10" width="10" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <g>
+                                                <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
+                                                </g>
+                                            </svg>
+                                        </i>
+                                        <i class="sidenav-mini-icon" data-bs-toggle="tooltip" title="Apexcharts" data-bs-placement="right"> A </i>
+                                        <span class="item-name">Saldo Awal Tahun</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">
+                                        <i class="icon">
+                                            <svg class="icon-10" width="10" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <g>
+                                                <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
+                                                </g>
+                                            </svg>
+                                        </i>
+                                        <i class="sidenav-mini-icon" data-bs-toggle="tooltip" title="Apexcharts" data-bs-placement="right"> A </i>
+                                        <span class="item-name">Saldo Awal Bunga <br> Bank </span>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="dashboard/errors/error404.html">
