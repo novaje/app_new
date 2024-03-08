@@ -28,20 +28,20 @@
                 </div>
             </div>
             <div class="card-body flex-grow-1">
-                <form method="post" action="{{ route('rincian_rekening.save_rincian') }}">
+                <form method="post" action="{{ route('rincianRekening.create') }}">
                     @csrf
                     <div class="form-group">
                         <label class="form-label" for="level">Kode Rekening:</label>
-                        <input type="text" name="kd_rek_object" class="form-control @error('kd_rek_object') is-invalid @enderror" value="{{ old('kd_rek_object') }}" id="kd_rek_object" style="max-width: 350px;">
-                        @error('kd_rek_object')
+                        <input type="text" name="kd_rincianRekening" class="form-control @error('kd_rincianRekening') is-invalid @enderror" value="{{ old('kd_rincianRekening') }}" id="kd_rincianRekening" style="max-width: 350px;">
+                        @error('kd_rincianRekening')
                             <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
                     </div>                    
                     <div class="form-group">
                         <label class="form-label" for="level">Nama Rekening :</label>
-                        <input type="text" name="nm_rekning" class="form-control @error('nm_rekning') is invalid
-                        @enderror" value="{{ old('nm_rekning') }}" id="nm_rekning" style="max-width: 350px;">
-                        @error('nm_rekning')
+                        <input type="text" name="nm_rincianRekening" class="form-control @error('nm_rincianRekening') is invalid
+                        @enderror" value="{{ old('nm_rincianRekening') }}" id="nm_rincianRekening" style="max-width: 350px;">
+                        @error('nm_rincianRekening')
                             <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
                     </div>

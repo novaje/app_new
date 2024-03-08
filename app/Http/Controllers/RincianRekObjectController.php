@@ -2,52 +2,50 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\RincianRekObject;
+use App\Models\rincianRekObject;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 
-class RincianRekObjectController extends Controller
+class rincianRekObjectController extends Controller
 {
-    public function rincianRekening()
+    public function dataRincian()
     {
-        $rekening = RincianRekObject::all();
+        $rekening = rincianRekObject::all();
         $data = [
-            "tittle" => "Rincian Rekening Object",
-            "dataRincianObject" => $rekening
+            "tittle" => "Rincian Rekening",
+            "dataRincian" => $rekening
         ];
         return view('rekening_rincian_object.v_rincianRek', $data);
     }
 
-    public function addRincianRekening()
+    public function addRincian()
     {
         return view('rekening_rincian_object.v_addRincianRek');
     }
 
-    public function saveRincian(Request $request)
+    public function create(Request $request)
     {
         $messages = [
-            'kd_rek_object.unique' => 'Kode rekening sudah digunakan.',
-            'nm_rekning.unique' => 'Nama rekening sudah digunakan.',
+            'kd_rincianRekening.unique' => 'Kode rekening Sudah Digunakan!!',
+            'nm_rincianRekening.unique' => 'Nama rekening sudah Digunakan!!',
         ];
-
+    
         $validateData = $request->validate([
-        'kd_rek_object' => [
-            'string',
-            'required',
-            Rule::unique('RincianRekObject', 'kd_rek_object')->ignore($request->id),
-        ],
-        'nm_rekning' => [
-            'string',
-            'required',
-            Rule::unique('RincianRekObject', 'nm_rekning')->ignore($request->id),
-        ],
-    ], $messages);
-
+            'kd_rincianRekening' => [
+                'string',
+                'required',
+                Rule::unique('rincian_rek_object', 'kd_rincianRekening')->ignore($request->id),
+            ],
+            'nm_rincianRekening' => 'string|required|unique:rincian_rek_object',
+        ], $messages);
+    
         $rekening = RincianRekObject::create($validateData);
         if ($rekening) {
-            return redirect()->route('RincianRekening.rincianRekening')->with('success', 'Berhasil menambahkan data!');
+            return redirect()->route('rincianRekening.dataRincian')->with('success', 'Berhasil menambahkan data!');
         } else {
-            return redirect()->route('RincianRekening.rincianRekening')->with('failed', 'Gagal menambahkan data!');
-        }
+            return redirect()->route('rincianRekening.dataRincian')->with('failed', 'Gagal menambahkan data!');
+        }    
     }
+
+    // Rule::unique('rincian_rek_object', 'kd_rincianRekening')->ignore($request->id), rincian_rek_object di bagian ini itu nama table di database nya
 }

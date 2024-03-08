@@ -101,9 +101,9 @@ Route::post('/simpan-rekening-object', [RekObjectController::class, 'saveRekenin
 Route::get('/rekobject', [RekObjectController::class, 'getRekening'])->name('rekobject.getRekening');
 
 // rekening object rincian
-Route::get('/data-rincian-rekening objek', [RincianRekObjectController::class, 'rincianRekening'])->name('RincianRekening.rincianRekening');
-Route::get('/add-rincian-rekening', [RincianRekObjectController::class, 'addRincianRekening'])->name('rincian_rekening.add_rincian_rekening');
-Route::post('/simpan-rincian-rekening', [RincianRekObjectController::class, 'saveRincian'])->name('rincian_rekening.save_rincian');
+Route::get('/data-rincian-rekening-object', [rincianRekObjectController::class, 'dataRincian'])->name('rincianRekening.dataRincian');
+Route::get('/add-rincian-rekening', [rincianRekObjectController::class, 'addRincian'])->name('rincianRekening.addRincian');
+Route::post('/save-rincian-rekening', [rincianRekObjectController::class, 'create'])->name('rincianRekening.create');
 
 // Penataushaan (saldo Awal-> saldo awal tahun)
 Route::get('/data-saldo-awal-tahun', [SaldoAwalTahunController::class, 'saldoAwal'])->name('saldoawal.saldoTahunan');

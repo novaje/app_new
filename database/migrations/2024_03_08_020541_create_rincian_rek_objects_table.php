@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('rincian_rek_object', function (Blueprint $table) {
             $table->id('id_rincian');
-            $table->string('kd_rek_object', 50);
-            $table->string('nm_rekning');
+            $table->string('kd_rincianRekening');
+            $table->string('nm_rincianRekening');
             $table->timestamps();
         });
     }
