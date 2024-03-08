@@ -70,8 +70,43 @@
             rincianTableAkhir.style.display = "none";
         }
     }
-</script>
 
+    function toggleRekening6Satu(index) {
+        var rekening6Satu = document.getElementById("rekening6_satu" + index);
+        if (rekening6Satu.style.display === "none") {
+            rekening6Satu.style.display = "block";
+        } else {
+            rekening6Satu.style.display = "none";
+        }
+    }
+
+    function toggleRekening6Dua(index) {
+        var Rekening6Dua = document.getElementById("rekening6_dua" + index);
+        if (Rekening6Dua.style.display === "none") {
+            Rekening6Dua.style.display = "block";
+        } else {
+            Rekening6Dua.style.display = "none";
+        }
+    }
+
+    function toggleRekening6Tiga(index) {
+        var Rekening6Tiga = document.getElementById("rekening6_tiga" + index);
+        if (Rekening6Tiga.style.display === "none") {
+            Rekening6Tiga.style.display = "block";
+        } else {
+            Rekening6Tiga.style.display = "none";
+        }
+    }
+
+    function toggleRekening6Empat(index) {
+        var Rekening6Empat = document.getElementById("rekening6_empat" + index);
+        if (Rekening6Empat.style.display === "none") {
+            Rekening6Empat.style.display = "block";
+        } else {
+            Rekening6Empat.style.display = "none";
+        }
+    }
+</script>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
