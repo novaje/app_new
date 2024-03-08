@@ -153,7 +153,7 @@
                                                                 </button>
                                                             </div>
                                                             <table class="table table-bordered">
-                                                                <!-- ================================== Isi sub-table rekening objek 2 ==================================-->
+                                                                <!-- ================================== Isi sub-table rekening objek 3 ==================================-->
                                                                 <thead>
                                                                     <tr>
                                                                         <th style="width: 50%;">#</th>
