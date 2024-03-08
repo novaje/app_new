@@ -49,7 +49,7 @@
                             <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
                         </svg>
                   </button>
-                  <!-- Sub-table untuk rekening objek -->
+                  <!-- ==========Sub-table untuk rekening objek ===========-->
                   <div id="subTable{{ $loop->iteration }}" class="table-responsive sub-table" style="display: none;">
                       <div class="ml-3 mt-3">
                           <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#addDataModal">
@@ -67,6 +67,7 @@
                                   <th style="width: 50%;">Kode Rekening</th>
                                   <th style="width: 75%;">Nama Rekening Rincian Object</th>
                                   <th style="width: 50%;">Act</th>
+                                  <th style="width: 50%;">#</th>
                                   <!-- Tambahkan kolom sesuai kebutuhan -->
                               </tr>
                           </thead>
@@ -102,6 +103,84 @@
                                       </div>
                                   </div>
                                   </td>
+                                  <td>
+                                    <button type="button" class="btn btn-danger btn-sm" onclick="toggleRincianTable({{ $loop->iteration }})">
+                                        Open Rekening
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+                                            <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
+                                        </svg>
+                                    </button>
+                                    <div id="rincianTable{{ $loop->iteration }}" class="table-responsive sub-table" style="display: none;">
+                                        <div class="ml-3 mt-3">
+                                            <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#addDataModal">
+                                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                                                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"/>
+                                              </svg>
+                                              Tambah Rekening
+                                            </button>
+                                        </div>
+                                        <table class="table table-bordered">
+                                            <!-- ================================== Isi sub-table rekening objek 2 ==================================-->
+                                            <thead>
+                                                <tr>
+                                                    <th style="width: 50%;">#</th>
+                                                    <th style="width: 50%;">Kode Rekening</th>
+                                                    <th style="width: 75%;">Nama Rekening Rincian Object</th>
+                                                    <th style="width: 75%;"></th>
+                                                    <!-- Tambahkan kolom sesuai kebutuhan -->
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <!-- Isi data rekening objek -->
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Data 1</td>
+                                                    <td>Data 2</td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-danger btn-sm" onclick="toggleRincianTableAkhir({{ $loop->iteration }})">
+                                                            Open Rekening
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+                                                                <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
+                                                            </svg>
+                                                        </button>
+                                                        <div id="rincianTableakhir{{ $loop->iteration }}" class="table-responsive sub-table" style="display: none;">
+                                                            <div class="ml-3 mt-3">
+                                                                <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#addDataModal">
+                                                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                                                                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"/>
+                                                                  </svg>
+                                                                  Tambah Rekening
+                                                                </button>
+                                                            </div>
+                                                            <table class="table table-bordered">
+                                                                <!-- ================================== Isi sub-table rekening objek 2 ==================================-->
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th style="width: 50%;">#</th>
+                                                                        <th style="width: 50%;">Kode Rekening</th>
+                                                                        <th style="width: 75%;">Nama Rekening Rincian Object</th>
+                                                                        <!-- Tambahkan kolom sesuai kebutuhan -->
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <!-- Isi data rekening objek -->
+                                                                    <tr>
+                                                                        <td>1</td>
+                                                                        <td>Data 1</td>
+                                                                        <td>Data 2</td>
+                                                                    <!-- Tambahkan data sesuai kebutuhan -->
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </td>
+                                                <!-- Tambahkan data sesuai kebutuhan -->
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                  </td>
+                                  {{-- ======================================================================= --}}
                               <!-- Tambahkan data sesuai kebutuhan -->
                               </tr>
                           </tbody>

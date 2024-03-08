@@ -52,7 +52,26 @@
             subTable.style.display = "none";
         }
     }
+
+    function toggleRincianTable(index) {
+        var rincianTable = document.getElementById("rincianTable" + index);
+        if (rincianTable.style.display === "none") {
+            rincianTable.style.display = "block";
+        } else {
+            rincianTable.style.display = "none";
+        }
+    }
+
+    function toggleRincianTableAkhir(index) {
+        var rincianTableAkhir = document.getElementById("rincianTableakhir" + index);
+        if (rincianTableAkhir.style.display === "none") {
+            rincianTableAkhir.style.display = "block";
+        } else {
+            rincianTableAkhir.style.display = "none";
+        }
+    }
 </script>
+
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
